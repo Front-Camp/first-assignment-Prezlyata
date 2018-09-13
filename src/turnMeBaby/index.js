@@ -17,9 +17,8 @@ const turnMeBaby = str => {
     })
     return res.join(' ');
   } else {
-    return new Error();
+    throw new Error('this is not a string');
   }
- 
 };
 
 export default turnMeBaby;

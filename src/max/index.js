@@ -9,7 +9,7 @@
 const max = arr => {
   let max = arr[0];
   arr.forEach(el => {
-    if (el > max && isNaN(el) === false && isFinite(el) === false) {
+    if (el > max && isNaN(el) === false && isFinite(el) !== false) {
       max = el;
   }});
   return max;
