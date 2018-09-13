@@ -7,7 +7,12 @@
 * max([-1, 0]);   // 0
 */
 const max = arr => {
-  /* your logic here...*/
+  let max = arr[0];
+  arr.forEach(el => {
+    if (el > max && isNaN(el) === false && isFinite(el) === false) {
+      max = el;
+  }});
+  return max;
 };
 
 export default max;
